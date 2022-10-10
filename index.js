@@ -15,6 +15,8 @@ client.on("ready", () => {
     .setDetails(`${config.detail}`)
     .setState(`${config.state}`)
     .setType(`${config.status}`)
+    .setAssetsLargeImage(`${config.largeimage}`)
+    .setAssetsSmallImage(`${config.smallimage}`)
     .setAssetsLargeText(`${config.largeimageText}`)
     .setAssetsSmallText(`${config.smallimageText}`)
     .setStartTimestamp(Date.now())
