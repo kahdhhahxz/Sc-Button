@@ -1,0 +1,16 @@
+{
+    "status": "PLAYING", 
+    "name": "AppName", 
+    "detail":"Detail 1",
+    "url": "https://twitch.tv/discord",
+    "state": "Detail 2",
+    "applicationid": "1028655206382178434",
+    "largeimage": "mp:attachments/964847736648265728/1028243595729309736/humanstore.gif",
+    "smallimage": "mp:attachments/820557032016969751/991172011483218010/unknown.png",
+    "largeimageName": "Large Image",
+    "smallimageName": "Small Image",
+    "button1": "Button 1",
+    "button2": "Button 2",
+    "urlbutton1": "https://youtube.com",
+    "urlbutton2": "https://youtube.com"
+}
