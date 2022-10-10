@@ -2,7 +2,6 @@
     "status": "PLAYING", 
     "name": "AppName", 
     "detail":"Detail 1",
-    "url": "https://twitch.tv/discord",
     "state": "Detail 2",
     "applicationid": "1028655206382178434",
     "largeimage": "mp:attachments/964847736648265728/1028243595729309736/humanstore.gif",
