@@ -1,8 +1,6 @@
-const express = require("express")
-const server = express()
-server.all("/", (req, res) => {})
-let discord = require('discord.js-selfbot-v13')
 const dotenv = require('dotenv');
+let discord = require('discord.js-selfbot-v13')
+const keepAlive = require ('./server.js')
 const config = require('./config.json');
 const TOKEN = process.env.TOKEN;
 let client = new discord.Client({
@@ -10,10 +8,6 @@ let client = new discord.Client({
 });
 
 client.login(TOKEN)
-
-server.listen(8080, () => {
-  console.log("Loading script...")
-})
 
 client.on("ready", () => {
   console.log(`Username: ${client.user.tag}`)
