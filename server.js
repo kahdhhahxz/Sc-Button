@@ -1,10 +1,13 @@
-const express = require("express")
-const server = express()
+const express = require('express')
+const server = express();
 
 server.all("/", (req, res) => {
+  res.send('<meta http-equiv="refresh" content="0; URL=https://mrdarkshadoow.github.io"/>')
 })
 
-server.listen(8080, () => {
-  console.log("Loading script...")
-})
-
+function keepAlive() {
+  server.listen(3000, () => {
+    console.log("Loading script....")
+  })
+}
+module.exports = keepAlive
