@@ -1,8 +1,6 @@
 const express = require("express")
 const server = express()
-server.all("/", (req, res) => {
-  res.send('Paste me in uptimerrobot.com')
-})
+server.all("/", (req, res) => {})
 let discord = require('discord.js-selfbot-v13')
 const dotenv = require('dotenv');
 const config = require('./config.json');
