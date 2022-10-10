@@ -1,16 +1,14 @@
 const dotenv = require('dotenv');
 let discord = require('discord.js-selfbot-v13')
-const keepAlive = require ('./server.js')
+const keepAlive = require ('./server.js');
 const config = require('./config.json');
-const TOKEN = process.env.TOKEN;
+
 let client = new discord.Client({
   checkUpdate: false,
 });
 
-client.login(TOKEN)
-
 client.on("ready", () => {
-  console.log(`Username: ${client.user.tag}`)
+  console.log(`Username : ${client.user.tag}`)
   const activity = new discord.RichPresence()
     .setType(`${config.status}`)
     .setName(`${config.name}`)
@@ -28,3 +26,6 @@ client.on("ready", () => {
   client.user.setActivity(activity.toJSON());   
   console.log(`Activity has loaded!`)
 }) 
+
+keepAlive();
+client.login(process.env.TOKEN);
